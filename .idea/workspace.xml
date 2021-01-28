@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a426522d-f99e-40e9-a4ae-89417a41c665" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611842189995</updated>
       <workItem from="1611842191892" duration="1073000" />
-      <workItem from="1611846968981" duration="1170000" />
+      <workItem from="1611846968981" duration="1877000" />
     </task>
     <servers />
   </component>
@@ -83,5 +84,9 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1399" height="197" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1611843554171" />
+    <state x="394" y="168" width="671" height="486" key="find.popup" timestamp="1611852837271">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="394" y="168" width="671" height="486" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1611852837271" />
   </component>
 </project>

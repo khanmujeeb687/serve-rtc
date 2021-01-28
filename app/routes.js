@@ -3,11 +3,11 @@ module.exports = function(app, streams) {
   // GET home 
   var index = function(req, res) {
     res.render('index', { 
-                          title: 'Project RTC', 
+                          title: 'YouMeet',
                           header: 'WebRTC live streaming',
                           username: 'Username',
                           share: 'Share this link',
-                          footer: 'pierre@chabardes.net',
+                          footer: '@mktech',
                           id: req.params.id
                         });
   };
