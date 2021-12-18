@@ -29,9 +29,13 @@
     		return new Promise(function(resolve, reject){			
 				try {
 					//camera.stream.stop() no longer works
-          for( var track in camera.stream.getTracks() ){
-            track.stop();
-          }
+					//  for( let track in camera.stream.getTracks() ){
+					// 	 console.log({track});
+					// 	 track.stop();
+					// 	}
+					camera.stream.getTracks().forEach(function(track) {
+						track.stop();
+					  });
 					camera.preview.src = '';
 					resolve();
 				} catch(error) {
@@ -117,12 +121,12 @@
 
 	app.controller('LocalStreamController',['camera', '$scope', '$window', function(camera, $scope, $window){
 		var localStream = this;
-		localStream.name = 'Guest';
+		localStream.name = Date.now().toString();
 		localStream.link = '';
 		localStream.cameraIsOn = false;
 
 		$scope.$on('cameraIsOn', function(event,data) {
-    		$scope.$apply(function() {
+    		$scope.$apply(function() {			
 		    	localStream.cameraIsOn = data;
 		    });
 		});
@@ -134,8 +138,8 @@
 					client.send('leave');
 	    			client.setLocalStream(null);
 				})
-				.catch(function(err) {
-					console.log(err);
+				.catch(function(err) {	
+						console.log(err);
 				});
 			} else {
 				camera.start()
