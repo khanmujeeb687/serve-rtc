@@ -3,7 +3,7 @@ module.exports = function(app, streams) {
   // GET home 
   var index = function(req, res) {
     res.render('index', { 
-                          title: 'YouMeet',
+                          title: 'Panda samaj conference',
                           header: 'WebRTC live streaming',
                           username: 'Username',
                           share: 'Share this link',
